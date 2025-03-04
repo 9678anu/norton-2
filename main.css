@@ -115,6 +115,10 @@ section {
         width: 100%;
     }
 
+    .buttons{
+        display: none;
+    }
+
     /* Show when toggled */
     .nav-links.show, .buttons.show {
         display: flex;
@@ -132,6 +136,7 @@ section {
     .nav-links li  {
         margin-bottom: 20px;
     }
+    
 }
 
 @media (min-width: 769px) {
@@ -140,6 +145,10 @@ section {
     }
 }
 
+.popup{
+    width: 90%;
+    margin-top: 40px;
+}
 
 .hero {
     width: 100%;
