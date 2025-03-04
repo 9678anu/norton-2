@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-2" id="navbar">
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="./Index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+                <li><a href="./FAQ.html">FAQ</a></li>
+                <li><a href="./macfree.html">McAfee</a></li>
+            </ul>
+            <div class="buttons">
+                <button class="button-outline">Get Support</button>
+                <button class="button-filled">Our Services</button>
+            </div>
+
+        </nav>
+
+        <section class="about-section">
+            <div class="container">
+                <div class="content">
+                    <h2>Discover Norton: Your <br> Cybersecurity Partner</h2>
+                    <p>
+                        Norton was founded in 2020 with a mission to provide
+                        exceptional
+                        cybersecurity solutions that protect our clients’
+                        digital assets. Our
+                        team of experts, including seasoned professionals like
+                        John Doe, our
+                        CEO, and Jane Smith, our CTO, brings years of experience
+                        in IT
+                        security. We uphold values of integrity, innovation,
+                        customer focus,
+                        and excellence in everything we do. Our commitment to
+                        staying
+                        ahead of emerging threats ensures that we deliver the
+                        best solutions
+                        for our clients, fostering a safer online environment
+                        for all.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="container">
+                <img src="./images/team.webp" style="max-width: 100%;" alt="logo">
+            </div>
+        </section>
+
+        <script>
+          function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("show");
+        document.querySelector(".buttons").classList.toggle("show");
+    }
+    </script>
+
+    </body>
+</html>

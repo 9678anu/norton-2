@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-2" id="navbar">
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="./Index.html">Home</a></li>
+                <li><a href="./Aboutus.html">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="./FAQ.html">FAQ</a></li>
+                <li><a href="./macfree.html">McAfee</a></li>
+            </ul>
+            <div class="buttons">
+                <button class="button-outline">Get Support</button>
+                <button class="button-filled">Our Services</button>
+            </div>
+
+        </nav>
+
+        <div class="contact-page">
+            <div class="left-header">
+                <span class="git">Get In Touch</span>
+                <div class="contact-page-header">Contact Support</div>
+                <p>Reach out to us for any inquiries or support regarding our
+                    services.</p>
+            </div>
+
+            <div class="contact-page-details">
+                <div class="contact-page-item">
+                    <img
+                        src="https://img.icons8.com/ios-filled/50/000000/email.png"
+                        alt="Email Icon">
+                    <a
+                        href="mailto:support@cyberfoxmarketing.com">support@cyberfoxmarketing.com</a>
+                </div>
+                <div class="contact-page-item">
+                    <img
+                        src="https://img.icons8.com/ios-filled/50/000000/phone.png"
+                        alt="Phone Icon">
+                    <a href="tel:+18772056581">+1 (877) 205-6581</a>
+                </div>
+                <div class="contact-page-item">
+                    <img
+                        src="https://img.icons8.com/ios-filled/50/000000/marker.png"
+                        alt="Location Icon">
+
+                    <p>
+                        1209 Mountain Road, San Francisco, CA 94105, United
+                        States
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+
+            <div class="contact-page-map">
+                <iframe
+                    src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=1209+Mountain+Road,+San+Francisco,+CA"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <script>
+          function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("show");
+        document.querySelector(".buttons").classList.toggle("show");
+    }
+    </script>
+
+    </body>
+</html>

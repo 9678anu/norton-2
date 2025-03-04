@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-2" id="navbar">
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="./Index.html">Home</a></li>
+                <li><a href="./Aboutus.html">About Us</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="./macfree.html">McAfee</a></li>
+            </ul>
+            <div class="buttons">
+                <button class="button-outline">Get Support</button>
+                <button class="button-filled">Our Services</button>
+            </div>
+
+        </nav>
+
+        <br><br><br>
+        <br><br><br>
+
+        <div class="faq-container"
+            style="display: flex; flex-direction: column; align-items: flex-start;">
+            <div class="faq-left" style="width: 70%;">
+                <h2>FAQ</h2>
+                <p>Find answers to your most pressing questions about Norton’s
+                    cybersecurity services and how we can help you stay safe
+                    online.</p>
+            </div>
+            <div class="faq-right" style="width: 100%; margin-top: 40px;">
+                <div class="faq-item" onclick="toggleFAQ(this)">
+                    <div>How do I install Norton Antivirus?</div>
+                    <span>&#9662;</span>
+                </div>
+                <div class="faq-content">
+                    <p>To install Norton Antivirus, download the software from
+                        our website, run the installer, and follow the on-screen
+                        instructions to complete the setup.</p>
+                </div>
+
+                <div class="faq-item" onclick="toggleFAQ(this)">
+                    <div>What should I do if I need support?</div>
+                    <span>&#9662;</span>
+                </div>
+                <div class="faq-content">
+                    <p>If you require assistance, please visit our Contact Us
+                        page for support options, including live chat and phone
+                        support.</p>
+                </div>
+
+                <div class="faq-item" onclick="toggleFAQ(this)">
+                    <div>What features does Norton Antivirus offer?</div>
+                    <span>&#9662;</span>
+                </div>
+                <div class="faq-content">
+                    <p>Norton Antivirus provides real-time protection against
+                        malware, phishing, and other cyber threats, along with
+                        automatic updates and a user-friendly interface.</p>
+                </div>
+                <div class="faq-item"></div>
+            </div>
+            <div class="faq-left" style="width: 70%;">
+                <h2>Need More Help</h2>
+                <p>Contact us for personalized support and guidance</p>
+                <button>Get Support</button>
+            </div>
+
+        </div>
+
+        <script>
+          function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("show");
+        document.querySelector(".buttons").classList.toggle("show");
+    }
+
+    function toggleFAQ(element) {
+                let content = element.nextElementSibling;
+                let icon = element.querySelector("span");
+
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    content.style.marginBottom = "0";
+                    
+                    icon.style.transform = "rotate(0deg)";
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    content.style.marginBottom = "15px";
+
+                    icon.style.transform = "rotate(180deg)";
+                }
+            }
+
+ 
+    </script>
+
+    </body>
+</html>
